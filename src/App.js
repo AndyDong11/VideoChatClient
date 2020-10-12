@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route, Link, Redirect } from 'react-router-dom'
 import Login from './components/login/login'
 import Register from './components/register/register'
 import Home from './components/home/home'
+import VideoChat from './components/video/videochat'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route path='/login' component={Login} />
         <Route path='/register' component={Register} />
+        <ProtectedRoute path='/videochat' component={VideoChat} />
         <ProtectedRoute path='/' component={Home} />
       </Switch>
     </BrowserRouter>

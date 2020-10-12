@@ -51,7 +51,7 @@ export default function Home() {
                         <div className='row header'>
                             <div><Link to='/login'>Login</Link></div>
                             <div><Link to='/register'>Register</Link></div>
-                        </div>
+                        </div> 
                 }
             </div>
             <div>
@@ -66,7 +66,10 @@ export default function Home() {
                 </div>
             </div>
             <div>
-                <video ref={videoRef} autoPlay playsInline controls={false} muted />
+                <video ref={videoRef} autoPlay playsInline controls={false} mute />
+            </div>
+            <div>
+                <Link to='/videochat'>Join video chat</Link>
             </div>
         </div>
     )
